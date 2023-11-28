@@ -22,6 +22,7 @@ func main(){
 //Сделал преобразование в нижний регистр для учета и английских и русских символов.
 func isUniqueLetters(str string) bool{
 	str = strings.ToLower(str)
+	//Cоздал мапу символов, если символ в мапе уже есть, значит строка содержит неуникальные символы.
 	dict := map[rune]bool{}
 	for _, r := range str{
 		if dict[r]{
