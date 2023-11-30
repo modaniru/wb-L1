@@ -23,6 +23,7 @@ func WithWaitGroup(){
 			count += value * value
 		}(v)
 	}
+	//Ждем когда счетчик у wg будет равен 0
 	wg.Wait()
 	fmt.Println(count)
 }

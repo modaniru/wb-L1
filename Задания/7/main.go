@@ -49,8 +49,3 @@ func (s *syncMap[K, V]) Delete(key K){
 
 	delete(s.myMap, key)
 }
-//TODO протестировать, запускать цикл горутин, рандомных операций над мапой??
-func main(){
-	mapa := NewSyncMap[int, string]()
-	mapa.Set(2, "21")
-}
